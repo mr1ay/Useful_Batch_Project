@@ -20,6 +20,16 @@
 			batbox /c 0x0f /d ": " 
 			batbox /c 0x0f /d "create a new batch file and edit this file"
 			echo.
+			batbox /c 0x0b /d "      n b" 
+			batbox /c 0x0e /d " [file]"
+			batbox /c 0x0f /d ": " 
+			batbox /c 0x0f /d "create a new batch file and edit this file"
+			echo.
+			batbox /c 0x0b /d "      n m" 
+			batbox /c 0x0e /d " [file]"
+			batbox /c 0x0f /d ": " 
+			batbox /c 0x0f /d "create a new mr1ay file and edit this file"
+			echo.
 			goto :end
 			)
 
@@ -31,6 +41,16 @@
 
 	if "%1"=="nn"  	(
 			start notepad.exe %2.bat
+			goto :end
+			)
+
+	if "%1"=="b"  	(
+			start notepad.exe %2.bat
+			goto :end
+			)
+
+	if "%1"=="m"  	(
+			start notepad.exe %2.mr1ay
 			goto :end
 			)
 
